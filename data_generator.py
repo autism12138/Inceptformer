@@ -67,11 +67,9 @@ def train_datagenerator(batchsize, train_data1, train_data2, train_data3, win_tr
         # data_to_insert = np.zeros((batchsize, channel, insert_length, 3))
 
         x_train[:, :, r_m:int(r_m + mask_rate * win_train), :] = 0
-        # # # 插入数据段
         # x_train = np.concatenate((x_train[:, :, :r_m, :], data_to_insert, x_train[:, :, r_m:, :]), axis=2)
 
         # 2024/08/02/
-        # 插入多个小片段
         # num_segments= 1
         # insert_length = int(mask_rate * win_train / num_segments)
         # # print("insert_length:",insert_length)

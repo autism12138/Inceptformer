@@ -162,17 +162,3 @@ if __name__ == '__main__':
                         callbacks=[model_checkpoint, early_stopping, reduce_lr]
                     )
                     # accuracy_dict[sub_selelct][block_n]=history.history['accuracy']
-
-# 绘制结果图
-# plt.figure(figsize=(12, 8))
-
-# for sub_selelct in range(31, 32):
-#     for block_n in range(6):~
-#         plt.plot(accuracy_dict[sub_selelct][block_n], label=f'Subject {sub_selelct} Block {block_n}')
-
-# plt.xlabel('Epoch')
-# plt.ylabel('Accuracy')
-# plt.title('Training Accuracy for Each Subject and Each Block')
-# plt.legend(loc='best')
-# plt.savefig('traning_accuracy31.jpg')
-# plt.show()
